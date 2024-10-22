@@ -1,0 +1,198 @@
+{
+  "config": {
+    "configFile": "/Users/sailajaperuka/JavaScript/playwright.config.js",
+    "rootDir": "/Users/sailajaperuka/JavaScript/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/sailajaperuka/JavaScript/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/sailajaperuka/JavaScript/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 10000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "hooksAndPage.spec.js",
+      "file": "hooksAndPage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Describe block for hooks",
+          "file": "hooksAndPage.spec.js",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "A/B Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3969,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "BEFORE ALL HOOK LAUNCHED CHROMIUM BROWSER\n"
+                        },
+                        {
+                          "text": "AFTER EACH HOOK CLOSED PAGE\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-10-22T23:45:40.288Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0031a1d1e346d8daaca2-2b20a301bf884b424657",
+              "file": "hooksAndPage.spec.js",
+              "line": 42,
+              "column": 9
+            },
+            {
+              "title": "Checkbox verification",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1088,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "AFTER EACH HOOK CLOSED PAGE\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-10-22T23:45:44.839Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0031a1d1e346d8daaca2-80a6c69a3ba26762df73",
+              "file": "hooksAndPage.spec.js",
+              "line": 48,
+              "column": 9
+            },
+            {
+              "title": "GeoLocation Setting in context and verification",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1838,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "AFTER EACH HOOK CLOSED PAGE\n"
+                        },
+                        {
+                          "text": "AFTER ALL HOOK CLOSED BROWSER\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-10-22T23:45:45.931Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0031a1d1e346d8daaca2-f13259b9b8d4a6a78fa3",
+              "file": "hooksAndPage.spec.js",
+              "line": 55,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-10-22T23:45:40.069Z",
+    "duration": 7725.975,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
